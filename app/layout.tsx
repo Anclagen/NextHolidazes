@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Nav } from "@/components/nav/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <nav className="flex items-center justify-between p-4"></nav>
+          <Nav />
         </header>
         {children}
       </body>
